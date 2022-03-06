@@ -1,7 +1,5 @@
 <?php
-
-/* 
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
- */
+$utf8 = header("Content-Type: text/html; charse=urf8");
+$link = new mysqli('localhost', 'root', '', 'db_ar');
+$link->set_charset('utf8');
 

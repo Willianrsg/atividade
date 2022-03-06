@@ -1,3 +1,4 @@
+<?php session_start()?>
 <!DOCTYPE html>
 <!--
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -30,7 +31,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                 <fieldset class="formulario">
                     <legend><img src="imagens/avatar.png" alt="[imagem]" width="100"></legend>
                     <h5 class="light center">Cadastro de Usuarios</h5>
-                  
+                    
+                    <?php
+                        if (isset($_SESSION['msg'])):
+                            echo $_SESSION['msg'];
+                            session_unset();
+                        endif;
+                    ?>
                     <!--CAMPO NOME-->
                     <div class="input-field col s12">
                         <!--<i class="material-icons prefix">account_circle</i>-->
@@ -42,7 +49,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                     <div class="input-field col s12">
                         <!--<i class="material-icons prefix">account_circle</i>-->
                         <input type="password" name="senha" id="senha" maxlength="12" required>
-                        <label for="nome">Senha do Usuario</label>
+                        <label for="senha">Senha do Usuario</label>
                     </div>
                     
                     <!--BOTÕES-->
