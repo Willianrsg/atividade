@@ -23,6 +23,40 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
             </div>
         </nav>
         
+        <!--FORMULARIO DE CADASTRO-->
+        <div class="row container">
+            <p>&nbsp;</p>
+            <form action="db/create.php" method="post" class="col s12">
+                <fieldset class="formulario">
+                    <legend><img src="imagens/avatar.png" alt="[imagem]" width="100"></legend>
+                    <h5 class="light center">Cadastro de Usuarios</h5>
+                  
+                    <!--CAMPO NOME-->
+                    <div class="input-field col s12">
+                        <!--<i class="material-icons prefix">account_circle</i>-->
+                        <input type="text" name="nome" id="nome" maxlength="40" required autofocus>
+                        <label for="nome">Nome do Usuario</label>
+                    </div>
+                    
+                    <!--CAMPO SENHA-->
+                    <div class="input-field col s12">
+                        <!--<i class="material-icons prefix">account_circle</i>-->
+                        <input type="password" name="senha" id="senha" maxlength="12" required>
+                        <label for="nome">Senha do Usuario</label>
+                    </div>
+                    
+                    <!--BOTÕES-->
+                    <div class="input-field col s12">
+                        <input type="submit" value="Cadastrar" class="btn blue">
+                        <input type="reset" value="Limpar" class="btn red">
+
+                    </div>
+                    
+                </fieldset>
+            </form>
+        </div>
+          
+        
         <!--ARQUIVOS JQUERY E JAVASCRIPT-->
         <script type="text/javascript" src="bootstrap-5.1.3/js/jquery-3.6.0.min.js"></script>
         <script type="text/javascript" src="bootstrap-5.1.3/js/index.umd.js"></script>
