@@ -18,14 +18,14 @@
                     ?>
                     <!--CAMPO NOME-->
                     <div class="input-field col s12">
-                        <!--<i class="material-icons prefix">account_circle</i>-->
+                        <i class="material-icons prefix">account_circle</i>
                         <input type="text" name="nome" id="nome" maxlength="40" placeholder="Nome do Usuario" required autofocus>
                         
                     </div>
                     
                     <!--CAMPO SENHA-->
                     <div class="input-field col s12">
-                        <!--<i class="material-icons prefix">account_circle</i>-->
+                        <i class="material-icons prefix">lock</i>
                         <input type="password" name="senha" id="senha" maxlength="12" placeholder="Senha" required>
                         
                     </div>

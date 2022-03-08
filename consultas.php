@@ -3,18 +3,22 @@
 
 <div class="row container">
     <div class="col s12">
-        <<h5 class="light">Consultas</h5><hr>
+        <legend><img src="imagens/consulta.png" alt="[imagem]" width="100"></legend>
+        <h5 class="light">Consultas</h5><hr>
         
         <table class="striped">
-            <<thead>
+            <thead>
                 <tr>
                     <th>Nome</th>
-                    <th>Senha</th>
+                    <th>Descriçao</th>
+                    <th>Codigo de barra</th>
+                    <th>fabricante</th>
+                    <th>validade</th>
                 </tr>
             </thead>
             <tbody>
                 <?php
-                    include_once 'db/read.php';
+                    include_once './db/produto/read-produto.php';
                 ?>
             </tbody>
             
