@@ -10,7 +10,7 @@
 </div>
 
 <?php
-        include_once './db/conexao.php';
+    include_once './db/conexao.php';
     $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
     $querySelect = $link->query("select * from tb_usuario where id='$id'");
     
@@ -46,7 +46,7 @@
                     <!--BOTÕES-->
                     <div class="input-field col s12">
                         <input type="submit" value="Alterar" class="btn blue">
-                        <a href="consulta.php" class="btn red">Cancelar</a>
+                        <a href="consultas.php" class="btn red">Cancelar</a>
 
                     </div>
                     

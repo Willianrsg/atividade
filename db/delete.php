@@ -1,7 +1,11 @@
 <?php
 
-/* 
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
- */
+include_once './conexao.php';
+
+$id = filter_input(INPUT_GET, 'id',FILTER_SANITIZE_SPECIAL_CHARS);
+$queryDelete = $link->query("delete from tb_usuario where id='$id'");
+
+if(mysqli_affected_rows($link) > 0):
+    header("consultas.php");
+endif;
 

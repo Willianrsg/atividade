@@ -8,7 +8,9 @@ while ($registros = $querySelect->fetch_assoc()):
     $senha = $registros['senha'];
     
     echo "<tr>";
-    echo "<td>$nome</td><td>$senha</td><td><a href='editar.php?id=$id'><i class='material-icons'>edit</i></td><td><a href='bd/delete.php?id=id'><i class='material-icons'>delete</i></td>";
+    echo "<td>$nome</td><td>$senha</td>";
+    echo "<td><a href='editar.php?id=$id'><i class='material-icons'>edit</i></a></td>";
+    echo "<td><a href='delete.php?id=$id'><i class='material-icons'>delete</i></a></td>";
     echo "</tr>";
     
     

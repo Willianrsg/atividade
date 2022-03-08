@@ -7,7 +7,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="materialize/css/materialize.min.css"> 
-        <title>Login</title>
+        <title>Controle de Estoue</title>
       
     </head>
     <body>
