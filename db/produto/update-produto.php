@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once '../conexao.php';
+include ('./db/conexao.php');
 $id            = filter_input(INPUT_GET, 'id',FILTER_SANITIZE_SPECIAL_CHARS);
 $nome          = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
 $descricao     = filter_input(INPUT_POST, 'descricao', FILTER_SANITIZE_SPECIAL_CHARS);
